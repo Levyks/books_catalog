@@ -20,6 +20,7 @@ defmodule BooksCatalogWeb.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
+    resources "/books", BookController
   end
 
   # Other scopes may use custom stacks.
